@@ -73,5 +73,11 @@ export default [
       }],
       'vue/multi-word-component-names': 'off'
     }
+  },
+  {
+    files: ['src/components/ui/**/*.vue'],
+    rules: {
+      'vue/no-reserved-props': 'off'
+    }
   }
 ] 

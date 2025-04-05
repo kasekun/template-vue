@@ -1,5 +1,6 @@
 <script setup lang="ts">
   import { useUserStore } from '../stores/user'
+  import { Button } from '@/components/ui/button'
 
   const userStore = useUserStore()
 </script>
@@ -14,26 +15,15 @@
       <div class="mt-8">
         <div v-if="userStore.isAuthenticated" class="space-y-4">
           <p class="text-xl">Welcome, {{ userStore.currentUser?.email }}</p>
-          <button
-            class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-            @click="userStore.logout"
-          >
-            Sign Out
-          </button>
+          <Button variant="default" class="w-full" @click="userStore.logout">Sign Out</Button>
         </div>
         <div v-else class="space-y-4">
-          <router-link
-            to="/login"
-            class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-          >
-            Sign In
-          </router-link>
-          <router-link
-            to="/register"
-            class="w-full flex justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-          >
-            Register
-          </router-link>
+          <Button variant="default" class="w-full" as-child>
+            <router-link to="/login">Sign In</router-link>
+          </Button>
+          <Button variant="outline" class="w-full" as-child>
+            <router-link to="/register">Register</router-link>
+          </Button>
         </div>
       </div>
     </div>

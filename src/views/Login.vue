@@ -2,6 +2,7 @@
   import { ref } from 'vue'
   import { useRouter } from 'vue-router'
   import { useUserStore } from '../stores/user'
+  import { Button } from '@/components/ui/button'
 
   const router = useRouter()
   const userStore = useUserStore()
@@ -70,14 +71,10 @@
         </div>
 
         <div>
-          <button
-            type="submit"
-            :disabled="userStore.loading"
-            class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-          >
+          <Button type="submit" :disabled="userStore.loading" variant="default" class="w-full">
             <span v-if="userStore.loading">Loading...</span>
             <span v-else>Sign in</span>
-          </button>
+          </Button>
         </div>
       </form>
       <div class="text-center mt-4">
