@@ -43,14 +43,15 @@ See the [shadcn-vue documentation](https://www.shadcn-vue.com/docs) for all avai
 yarn install
 ```
 
-3. Create a Firebase project at [Firebase Console](https://console.firebase.google.com/)
-4. Enable Authentication with Email/Password sign-in method
-5. Create a `.env` file in the root directory (see `.env.example` for required variables)
-6. Start the development server:
+3. Start the development server:
 
 ```bash
 yarn dev
 ```
+
+4. [optional] Create a Firebase project at [Firebase Console](https://console.firebase.google.com/)
+5. [optional] Enable Authentication with Email/Password sign-in method
+6. [optional] Create a `.env` file in the root directory (see `.env.example` for required variables)
 
 ## Building for Production
 
