@@ -90,12 +90,7 @@
         </div>
 
         <div>
-          <Button
-            type="submit"
-            :disabled="userStore.loading"
-            variant="default"
-            class="w-full"
-          >
+          <Button type="submit" :disabled="userStore.loading" variant="default" class="w-full">
             <span v-if="userStore.loading">Loading...</span>
             <span v-else>Register</span>
           </Button>

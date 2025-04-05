@@ -18,12 +18,7 @@
       <h2 class="text-3xl font-bold text-gray-900 dark:text-white">Page Not Found</h2>
       <p class="text-gray-600 dark:text-gray-300">The page you are looking for does not exist</p>
       <div>
-        <Button
-          variant="default"
-          @click="goHome"
-        >
-          Go Home
-        </Button>
+        <Button variant="default" @click="goHome">Go Home</Button>
       </div>
     </div>
   </div>

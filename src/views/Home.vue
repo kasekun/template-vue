@@ -15,32 +15,14 @@
       <div class="mt-8">
         <div v-if="userStore.isAuthenticated" class="space-y-4">
           <p class="text-xl">Welcome, {{ userStore.currentUser?.email }}</p>
-          <Button
-            variant="default"
-            class="w-full"
-            @click="userStore.logout"
-          >
-            Sign Out
-          </Button>
+          <Button variant="default" class="w-full" @click="userStore.logout">Sign Out</Button>
         </div>
         <div v-else class="space-y-4">
-          <Button
-            variant="default"
-            class="w-full"
-            as-child
-          >
-            <router-link to="/login">
-              Sign In
-            </router-link>
+          <Button variant="default" class="w-full" as-child>
+            <router-link to="/login">Sign In</router-link>
           </Button>
-          <Button
-            variant="outline"
-            class="w-full"
-            as-child
-          >
-            <router-link to="/register">
-              Register
-            </router-link>
+          <Button variant="outline" class="w-full" as-child>
+            <router-link to="/register">Register</router-link>
           </Button>
         </div>
       </div>
