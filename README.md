@@ -11,9 +11,21 @@ A modern Vue 3 application built with TypeScript, Vite, and Firebase.
 - Pinia for state management
 - Vue Router for routing
 - TailwindCSS for styling
+- shadcn-vue for UI components
 - ESLint and Prettier for code quality
 - Vercel deployment configuration
 - .cursorrules for development
+
+## Components
+
+This project uses [shadcn-vue](https://www.shadcn-vue.com/) for UI components. To add a new component:
+
+```bash
+# Install a component
+npx shadcn-vue@latest add <component>
+```
+
+See the [shadcn-vue documentation](https://www.shadcn-vue.com/docs) for all available components.
 
 ## Prerequisites
 
