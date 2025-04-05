@@ -1,6 +1,7 @@
 # Nimbus
 
-A modern Vue 3 application built with TypeScript, Vite, and Firebase.
+A modern Vue 3 application built with TypeScript, Vite, and Firebase. Styled with
+shadcn-vue (see [1fe86c5](https://github.com/kasekun/template-vue/tree/1fe86c51d7a1014a9c0da01935c19c543e619b96) for app template prior to introduction of shadcn)
 
 ## Features
 
